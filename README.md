@@ -1,5 +1,7 @@
 # Mindwave Mobile 2 Focus Volume
 
+Control the volume of your computer with your mind...(-wave mobile 2 headset)
+
 ## Requirements
 
 * Mindwave Mobile 2 headset
