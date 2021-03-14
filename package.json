@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "debounce": "^1.2.1",
+    "loudness": "^0.2.2",
     "node-thinkgear-sockets": "^0.0.1",
     "system-control": "^0.1.1",
     "win-audio": "^1.2.0"
