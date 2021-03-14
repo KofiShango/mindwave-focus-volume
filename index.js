@@ -19,23 +19,23 @@ if(process.argv.length > 2){
  */
 const toggle = debounce(()=>{
     if(high){
-        audio.volume(99)
+        audio.volume(99);
     }else{
-        audio.volume(20)
+        audio.volume(20);
     }
     high = !high
 }, 5000, true);
 
 // default volume to 50%
-audio.volume(50)
+audio.volume(50);
 brain.connect();
 
 // Focus logic
 if(focus){
     brain.on('data', data=>{
-        const attention = data && data.eSense && data.eSense.attention 
+        const attention = data && data.eSense && data.eSense.attention;
         if(attention > 77){
-            toggle(attention)
+            toggle();
         }
     })
 }
@@ -43,9 +43,9 @@ if(focus){
 // Blink logic
 if(blink){
     brain.on('blink_data', data=>{
-        const blinkStrength = data && data.blinkStrength
+        const blinkStrength = data && data.blinkStrength;
         if(blinkStrength > 65){
-            toggle(attention)
+            toggle();
         }
     })
 }
